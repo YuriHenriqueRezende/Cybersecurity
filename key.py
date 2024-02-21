@@ -2,8 +2,8 @@ import hashlib
 
 def calcular_hash(texto):
     # Criar um objeto de hash MD5
-    hash_md5 = hashlib.md5()
-    has_sha256 =hashlib.sha256()
+    #hash_md5 = hashlib.md5()
+    #has_sha256 =hashlib.sha256()
     has_sha512 =hashlib.sha512()
     # Atualizar o objeto de hash com o texto fornecido
     #hash_md5.update(texto.encode())
@@ -15,7 +15,7 @@ def calcular_hash(texto):
     #return has_sha256.hexdigest()
     return has_sha512.hexdigest()
 # Exemplo de uso
-texto = "Ola Yuri "
+texto = "Ola Yuri  "
 hash_resultado = calcular_hash(texto)
 print("Hash do texto '{}':".format(texto))
 print(hash_resultado)
